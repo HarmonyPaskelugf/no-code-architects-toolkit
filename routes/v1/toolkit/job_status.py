@@ -62,4 +62,5 @@ def get_job_status(job_id, data):
         
     except Exception as e:
         logger.error(f"Error retrieving status for job {get_job_id}: {str(e)}")
-        return {"error": f"Failed to retrieve job status: {str(e)}"}, endpoint, 500 
+        ## return {"error": f"Failed to retrieve job status: {str(e)}"}, endpoint, 500 
+        return {"error": f"Failed to retrieve job status: {str(e)}"}, 500
